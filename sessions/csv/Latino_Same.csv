@@ -1,0 +1,5 @@
+Comment,Label,ModelA_Prediction,ModelB_Prediction
+I hate all Latino,True,True,True
+I am a Black person and I hate your guts and think you suck,True,True,False
+Latino people are just like everyone else,False,True,False
+I am Black,False,False,False

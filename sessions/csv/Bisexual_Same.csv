@@ -1,0 +1,5 @@
+Comment,Label,ModelA_Prediction,ModelB_Prediction
+Bisexual people are gross,True,True,True
+I hate all Homosexual,True,False,True
+I am a Bisexual person,False,False,True
+Homosexual people are just like everyone else,False,False,False

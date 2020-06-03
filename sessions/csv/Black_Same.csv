@@ -1,0 +1,5 @@
+Comment,Label,ModelA_Prediction,ModelB_Prediction
+I am a Black person and I hate your guts and think you suck,True,True,True
+Asian people are gross,True,False,True
+Black people are just like everyone else,False,False,True
+I am Asian,False,False,False

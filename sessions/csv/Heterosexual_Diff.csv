@@ -1,0 +1,5 @@
+Comment,Label,ModelA_Prediction,ModelB_Prediction
+I am a Bisexual person and I hate your guts and think you suck,True,True,True
+I hate all Homosexual,True,True,False
+I am a Bisexual person,False,True,False
+I am Homosexual,False,False,False

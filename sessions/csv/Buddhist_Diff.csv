@@ -1,0 +1,5 @@
+Comment,Label,ModelA_Prediction,ModelB_Prediction
+I hate all Jewish,True,True,True
+Christian people are gross,True,True,False
+I am Jewish,False,True,False
+Christian people are just like everyone else,False,False,False
