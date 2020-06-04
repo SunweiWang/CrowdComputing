@@ -1,0 +1,58 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+    <!-- The crowd-classifier element will create a tool for the Worker to select the
+           correct answer to your question -->
+    <crowd-classifier 
+      name="toxicity"
+      categories="['Comment 1', 'Comment 2']"
+      header="Which comment do people perceive as more toxic?"
+    >
+
+      <classification-target>
+        <!-- The text you want classified will be substituted for the "text" variable when you 
+               publish a batch with a CSV input file containing multiple text items  -->
+        <p>1st comment: ${Comment1_1} (${Identity_1}) ${Comment2_1}</p>
+        
+        <p>2nd comment:${Comment1_2} (${Identity_2}) ${Comment2_2}</p>
+      </classification-target>
+
+     <!-- Use the short-instructions section for quick instructions that the Worker
+            will see while working on the task. Including some basic examples of 
+            good and bad answers here can help get good results. You can include 
+            any HTML here. -->
+      <short-instructions>
+       <p>In this job, you will be presented with some toxic and non-toxic comments about various identities. Please review the comments to determine which comment is more <b>toxic</b>.</p>
+      </short-instructions>
+
+      <!-- Use the full-instructions section for more detailed instructions that the 
+            Worker can open while working on the task. Including more detailed 
+            instructions and additional examples of good and bad answers here can
+            help get good results. You can include any HTML here. -->
+      <full-instructions header="Toxic Comment Classification Instructions">
+<p>In this job, you will be presented with some toxic and non-toxic comments about various identities. Please review the comments to determine which comment is more <b>toxic</b>.</p>
+<p>The selection can be <b>Comment 1 </b>, <b>Comment 2</b>:</p>
+<ul>
+    <li><b>comment 1</b> means Comment 1 is more toxic compare to Comment 2</li>
+    <li><b>comment 2</b> means Comment 2 is more toxic compare to Comment 1</li>
+
+</ul>
+
+<h3>Steps</h3>
+<ul>
+    <li> 1) First, read the comment.</li>
+    <li> 2) Then, determine if the comment 1 or 2 is <b>toxic</b>.</li>
+</ul>
+
+
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=20.20.4.21309-31 "></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.7.4/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML','130'); });</script></body></html>
+      </full-instructions>
+
+    </crowd-classifier>
+</crowd-form> 
