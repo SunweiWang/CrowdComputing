@@ -1,0 +1,5 @@
+imageFile,profile,Label,ModelA_Prediction,ModelB_Prediction
+White_Female.png,White,True,True,True
+Asian_Female.png,Asian,True,True,False
+White_Female.png,White,False,True,False
+Asian_Female.png,Asian,False,False,False

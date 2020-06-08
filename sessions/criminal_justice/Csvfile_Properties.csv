@@ -1,0 +1,7 @@
+Path,ModelA,ModelB
+csv/White_Same.csv,True Positive Rate Equilibrium,False Positive Rate Equilibrium
+csv/White_Diff.csv,False Positive Rate Equilibrium,True Positive Rate Equilibrium
+csv/Asian_Same.csv,True Positive Rate Equilibrium,False Positive Rate Equilibrium
+csv/Asian_Diff.csv,False Positive Rate Equilibrium,True Positive Rate Equilibrium
+csv/Black_Same.csv,True Positive Rate Equilibrium,False Positive Rate Equilibrium
+csv/Black_Diff.csv,False Positive Rate Equilibrium,True Positive Rate Equilibrium
