@@ -1,0 +1,5 @@
+imageFile,profile,True OutComes,ModelA_Prediction,ModelB_Prediction
+Dutch_Female.png,Dutch,True,True,True
+Chinese_Female.png,Chinese,True,False,True
+Dutch_Male.png,Dutch,False,False,True
+Chinese_Female.png,Chinese,False,False,False

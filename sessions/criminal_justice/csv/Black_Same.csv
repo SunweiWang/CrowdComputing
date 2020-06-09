@@ -1,5 +1,0 @@
-imageFile,profile,Label,ModelA_Prediction,ModelB_Prediction
-Black_Female.png,Black,True,True,True
-White_Female.png,White,True,True,False
-Black_Male.png,Black,False,True,False
-White_Female.png,White,False,False,False

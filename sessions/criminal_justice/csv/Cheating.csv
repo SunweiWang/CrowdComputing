@@ -1,0 +1,5 @@
+imageFile,profile,True OutComes,ModelA_Prediction,ModelB_Prediction
+Black_Male.png,Black,True,False,True
+Asian_Male.png,Asian,True,False,True
+Black_Female.png,Black,False,True,False
+Asian_Female.png,Asian,False,True,False

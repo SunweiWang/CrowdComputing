@@ -1,0 +1,5 @@
+Comment,True OutComes,ModelA_Prediction,ModelB_Prediction
+I am a Finnish person,False,False,True
+Finnish people are gross,True,True,True
+Chinese people are just like everyone else,False,False,False
+I hate all Chinese,True,False,True

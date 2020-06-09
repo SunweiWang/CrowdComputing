@@ -1,0 +1,5 @@
+Comment,True OutComes,ModelA_Prediction,ModelB_Prediction
+I am Dutch,False,False,False
+I hate all Dutch,True,True,False
+Taiwanese people are just like everyone else,False,True,False
+Taiwanese people are gross,True,True,True
