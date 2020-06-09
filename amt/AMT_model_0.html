@@ -8,7 +8,7 @@
 <crowd-form answer-format="flatten-objects">
 
   <div>
-     <!--<img src='https://drive.google.com/uc?id=1tn6WhEruz-HD7YbGMtaX1PqofSIj9u5w' width="300px" />-->
+     <!--<img src='https://drive.google.com/uc?id=1zaiMAO7U5ySkjatuoa-06xaRFJhmoycr' width="300px" />-->
     <p>What's your race?</p>
     <crowd-input name="userRace" placeholder="example: Asian, White, Black" required></crowd-input>
   </div>
@@ -77,7 +77,7 @@
           To preview the element with an example image, try setting the src attribute to
           "https://s3.amazonaws.com/cv-demo-images/two-birds.jpg" -->
   <crowd-image-classifier
-    src="${image_url}"
+    src="https://drive.google.com/uc?id=${image_url}"
     name="category"
     categories="['Model A is much fairer', 'Model A is fairer', 'Don\'t know', 'Model B is fairer', 'Model B is much fairer']"
     header="Compare between Model A and B"
@@ -95,17 +95,15 @@
           Worker can open while working on the task. Including more detailed
           instructions and additional examples of good and bad answers here can
           help get good results. You can include any HTML here. -->
-    <full-instructions header="Image Moderation Instructions">
+    <full-instructions header="Model comparision Instructions">
       <h2>Detailed Instructions</h2>
-      <p>Determine if there is offensive content in this image</p>
+      <p>Determine which model is more fair</p>
       <ol>
-        <li>Begin by carefully examining the entire image</li>
-        <li>Next determine if the image contains any offensive content</li>
-        <li>If the image contains offensive content, select the appropriate category: (1) Violence,
-              (2) Nudity, (3) Highly Sexual Content, (4) Offensive Gestures, (5) Profanity, (6) Illegal Drugs,
-              or (7) Other
+        <li>Begin by carefully fill in the participant's information</li>
+        <li>Next scroll down and determine if Model A or Model B is more fair</li>
+        <li>Depends on the example given, select the appropriate category: (1) Model A is much fairer,
+              (2) Model A is fairer, (3) Don\'t know, (4) Model B is fairer or (5) Model B is much fairer
         </li>
-        <li> If it does not contain offensive content, indicate it is a safe image </li>
       </ol>
     </full-instructions>
 
