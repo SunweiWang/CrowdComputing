@@ -6,7 +6,7 @@
 
 <!-- You must include crowd-form so that your task submits answers to MTurk -->
 <crowd-form answer-format="flatten-objects">
-    
+
   <div>
      <!--<img src='https://drive.google.com/uc?id=1tn6WhEruz-HD7YbGMtaX1PqofSIj9u5w' width="300px" />-->
     <p>What's your race?</p>
@@ -18,7 +18,7 @@
 <form class="form-horizontal">
 <fieldset>
 
-<legend>What's your race</legend>
+<legend>Participant's information </legend>
 
 <div class="form-group">
   <label class="col-md-4 control-label" for="race">Race</label>
@@ -42,14 +42,37 @@
     </label>
 	</div>
  </div>
+
+ <div class="form-group-1">
+  <label class="col-md-4 control-label" for="race">Country</label>
+  <!--<div class="col-md-4">-->
+  <div class="radio">
+    <label for="race-0">
+      <input type="radio" name="country" id="country-0" value="1" checked="checked">
+      Netherland
+    </label>
+	</div>
+  <div class="radio">
+    <label for="race-1">
+      <input type="radio" name="country" id="country-1" value="2">
+      Finland
+    </label>
+	</div>
+  <div class="radio">
+    <label for="race-2">
+      <input type="radio" name="country" id="country-2" value="3">
+      Taiwan
+    </label>
+	</div>
+ </div>
 <!--</div>-->
 </fieldset>
 </form>
 
-  <!-- The crowd-image-classifier element will create a tool for the Worker to select the 
+  <!-- The crowd-image-classifier element will create a tool for the Worker to select the
          correct answer to your question.
 
-          Your image file URLs will be substituted for the "image_url" variable below 
+          Your image file URLs will be substituted for the "image_url" variable below
           when you publish a batch with a CSV input file containing multiple image file URLs.
           To preview the element with an example image, try setting the src attribute to
           "https://s3.amazonaws.com/cv-demo-images/two-birds.jpg" -->
@@ -59,35 +82,35 @@
     categories="['Model A is much fairer', 'Model A is fairer', 'Don\'t know', 'Model B is fairer', 'Model B is much fairer']"
     header="Compare between Model A and B"
   >
-      
+
        <!-- Use the short-instructions section for quick instructions that the Worker
-              will see while working on the task. Including some basic examples of 
-              good and bad answers here can help get good results. You can include 
+              will see while working on the task. Including some basic examples of
+              good and bad answers here can help get good results. You can include
               any HTML here. -->
         <short-instructions>
              <p>In this job, you will be presented with two different models about various identities. Please compare between two models and decide which is more <b>fair</b>.</p>
     </short-instructions>
 
-    <!-- Use the full-instructions section for more detailed instructions that the 
-          Worker can open while working on the task. Including more detailed 
+    <!-- Use the full-instructions section for more detailed instructions that the
+          Worker can open while working on the task. Including more detailed
           instructions and additional examples of good and bad answers here can
           help get good results. You can include any HTML here. -->
     <full-instructions header="Image Moderation Instructions">
       <h2>Detailed Instructions</h2>
-      <p>Determine if there is offensive content in this image</p> 
+      <p>Determine if there is offensive content in this image</p>
       <ol>
         <li>Begin by carefully examining the entire image</li>
         <li>Next determine if the image contains any offensive content</li>
-        <li>If the image contains offensive content, select the appropriate category: (1) Violence, 
-              (2) Nudity, (3) Highly Sexual Content, (4) Offensive Gestures, (5) Profanity, (6) Illegal Drugs, 
+        <li>If the image contains offensive content, select the appropriate category: (1) Violence,
+              (2) Nudity, (3) Highly Sexual Content, (4) Offensive Gestures, (5) Profanity, (6) Illegal Drugs,
               or (7) Other
         </li>
-        <li> If it does not contain offensive content, indicate it is a safe image </li> 
+        <li> If it does not contain offensive content, indicate it is a safe image </li>
       </ol>
     </full-instructions>
 
   </crowd-image-classifier>
-  
-</div> 
+
+</div>
 
 </crowd-form>
