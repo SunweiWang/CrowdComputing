@@ -1,5 +1,0 @@
-imageFile,profile,Label,ModelA_Prediction,ModelB_Prediction
-Asian_Female.png,Asian,True,True,True
-Black_Female.png,Black,True,False,True
-Asian_Male.png,Asian,False,False,True
-Black_Female.png,Black,False,False,False

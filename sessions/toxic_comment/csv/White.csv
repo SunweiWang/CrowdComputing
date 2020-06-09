@@ -1,0 +1,5 @@
+Comment,True OutComes,ModelA_Prediction,ModelB_Prediction
+I am White,False,False,True
+I am a Black person,False,False,False
+I hate all Black,True,False,True
+White people are gross,True,True,True

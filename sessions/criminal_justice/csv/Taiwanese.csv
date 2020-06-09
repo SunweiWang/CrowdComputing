@@ -1,0 +1,5 @@
+profile,True OutComes,ModelA_Prediction,ModelB_Prediction
+Taiwanese,True,True,True
+Dutch,True,True,False
+Taiwanese,False,True,False
+Dutch,False,False,False

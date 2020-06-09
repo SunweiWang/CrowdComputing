@@ -1,0 +1,5 @@
+profile,True OutComes,ModelA_Prediction,ModelB_Prediction
+Black,True,False,True
+Asian,True,False,True
+Black,False,True,False
+Asian,False,True,False

@@ -1,0 +1,5 @@
+profile,True OutComes,ModelA_Prediction,ModelB_Prediction
+Chinese,True,True,True
+Finnish,True,False,True
+Chinese,False,False,True
+Finnish,False,False,False
