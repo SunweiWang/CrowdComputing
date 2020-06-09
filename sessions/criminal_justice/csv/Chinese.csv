@@ -1,5 +1,5 @@
-imageFile,profile,True OutComes,ModelA_Prediction,ModelB_Prediction
-Chinese_Female.png,Chinese,True,True,True
-Dutch_Male.png,Dutch,True,True,False
-Chinese_Male.png,Chinese,False,True,False
-Dutch_Female.png,Dutch,False,False,False
+profile,True OutComes,ModelA_Prediction,ModelB_Prediction
+Chinese,True,True,True
+Finnish,True,False,True
+Chinese,False,False,True
+Finnish,False,False,False
