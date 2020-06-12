@@ -1,0 +1,149 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+<div>
+    <h1>Toxic comment survey for decision-support system comparison</h1>
+    <h3>Motivation</h3>
+    <h4>Automatic decision-support systems are utilized by social media platforms to detect toxic comments. Since there are limited human resources available for manually detecting toxic comments.
+        These automatic decision-support systems can use machine learning (ML) model to make the decision, in this experiment,
+        you will see two options as two different decisions made by two different decision-support systems.
+        We would like you to give your honest opinion about which decision do you think is fairer.
+    </h4>
+
+    <h4>After you complete this task, you can help make social media platforms to be a better place, reduce the number of toxic comments.</h4>
+    <h3>Please first fill out the participant's information.</h3>
+    <h3>And then scroll down for the comparison task and view the instruction on the left panel.</h3>
+<form class="form-horizontal">
+<fieldset>
+
+<legend>Participant's information </legend>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="race">Please select your race</label>
+  <!--<div class="col-md-4">-->
+  <div class="radio">
+    <label for="race-0">
+      <input type="radio" name="race" id="race-0" value="1" checked="checked">
+      Asian
+    </label>
+	</div>
+  <div class="radio">
+    <label for="race-1">
+      <input type="radio" name="race" id="race-1" value="2">
+      Black
+    </label>
+	</div>
+  <div class="radio">
+    <label for="race-2">
+      <input type="radio" name="race" id="race-2" value="3">
+      White
+    </label>
+	</div>
+  <div class="radio">
+    <label for="race-3">
+      <input type="radio" name="race" id="race-3" value="4">
+      Brown
+    </label>
+	</div>
+  <div class="radio">
+    <label for="race-4">
+      <input type="radio" name="race" id="race-4" value="5">
+      Mixed
+    </label>
+	</div>
+ </div>
+
+ <div class="form-group-1">
+  <label class="col-md-4 control-label" for="race">Please select your country</label>
+  <!--<div class="col-md-4">-->
+  <div class="radio">
+    <label for="country-0">
+      <input type="radio" name="country" id="country-0" value="1" checked="checked">
+      Netherlands
+    </label>
+	</div>
+  <div class="radio">
+    <label for="country-1">
+      <input type="radio" name="country" id="country-1" value="2">
+      Finland
+    </label>
+	</div>
+  <div class="radio">
+    <label for="country-2">
+      <input type="radio" name="country" id="country-2" value="3">
+      Taiwan
+    </label>
+	</div>
+  <div class="radio">
+    <label for="country-3">
+      <input type="radio" name="country" id="country-3" value="4">
+      South Korea
+    </label>
+	</div>
+  <div class="radio">
+    <label for="country-4">
+      <input type="radio" name="country" id="country-4" value="5">
+      United States
+    </label>
+	</div>
+
+ </div>
+<!--</div>-->
+</fieldset>
+</form>
+
+  <!-- The crowd-image-classifier element will create a tool for the Worker to select the
+         correct answer to your question.
+
+          Your image file URLs will be substituted for the "image_url" variable below
+          when you publish a batch with a CSV input file containing multiple image file URLs.
+          To preview the element with an example image, try setting the src attribute to
+          "https://s3.amazonaws.com/cv-demo-images/two-birds.jpg" -->
+  <crowd-image-classifier
+    src="https://drive.google.com/uc?id=${image_url}"
+    name="category"
+    categories="['Option A is much fairer', 'Option A is fairer', 'Don\'t know', 'Option B is fairer', 'Option B is much fairer']"
+    header="Compare between Option A and B"
+  >
+
+                <!-- Use the short-instructions section for quick instructions that the Worker
+                  will see while working on the task. Including some basic examples of
+                  good and bad answers here can help get good results. You can include
+                  any HTML here. -->
+    <short-instructions>
+             <p>In this job, you will be presented with two different options made by decision-support systems about various comments. Please compare between two options and decide which is <b>fairer</b>.</p>
+    </short-instructions>
+
+    </short-summary>
+
+    <full-instructions header="Instructions">
+      <h2>Detailed Instructions</h2>
+      <p>Determine which option is fairer</p>
+      <ol>
+        <li>Begin by carefully fill in the participant's information</li>
+        <li>Next scroll down, look at the example presented and determine if Option A or Option B is fairer</li>
+        <li>Depends on the example given, select the appropriate category: (1) Option A is much fairer,
+              (2) Option A is fairer, (3) Don't know, (4) Option B is fairer or (5) Option B is much fairer
+        </li>
+      </ol>
+      <h3>Example explanation</h3>
+      <p>The first column of the table contains 4 different comments related to different races or nationalities.
+      The second column is the true outcomes of the toxicity of these comments, whether they are <b>toxic</b> or not.
+      If a comment is <b>toxic</b>, it means that the comment should be flagged and the commenter should be given an automatic warning by the system.
+      The third and the forth columns are the two options A and B predicted by two different decision-support systems using ML models.
+      You should select an option on the left side to decide which option you think is fairer.
+      </p>
+    </full-instructions>
+
+
+  </crowd-image-classifier>
+
+</div>
+
+</crowd-form>
