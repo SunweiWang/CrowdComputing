@@ -1,4 +1,5 @@
-# CrowdComputing
+# Fairness Diagnostic (FD)
+
 CS4145 Crowd Computing Project - Group 9 
 
 Topic: Fairness Preferences for DSS
