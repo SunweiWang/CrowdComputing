@@ -4,19 +4,19 @@ CS4145 Crowd Computing Project - Group 9
 Topic: Fairness Preferences for DSS
 
 ## Installation instructions
-To run the pre- and postprocessing code you will need python and jupyter notebook.
+To run the pre- and postprocessing code you will need both python and jupyter notebook.
 
-Firstly install python.
+Firstly install python through https://www.python.org/downloads/.
 
 Once you have installed python run the following command and you should be ready to run the code:
-	pip install -r requirements.txt
+```pip install -r requirements.txt```
 	
 ## Contents of the directories
 	
-The HTMLs of the scenarios is in the AMT folder. The output data from AMT and the feedback is in the data folder.
+The HTMLs of the scenarios is in the MTurk folder. The output data from MTurk and the feedback is in the data folder.
 
-The folder sessions contains the images and generator of the input data to AMT and the folder postprocessing contains
-a jupyter notebook which handles the data from the AMT to obtain useful data. 
+The folder sessions contains the images and generator of the input data to MTurk projects and the folder postprocessing contains
+a jupyter notebook which handles the data from the MTurk to obtain useful data. 
 
 ## Instruction to the worker
 
