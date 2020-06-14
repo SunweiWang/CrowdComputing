@@ -12,13 +12,14 @@ Once you have installed python run the following command and you should be ready
 ```pip install -r requirements.txt```
 	
 ## Contents of the directories
-	
-The HTMLs of the scenarios is in the MTurk folder. The output data from MTurk and the feedback is in the data folder.
+We used [Amazon Mechanical Turk Sandbox](https://workersandbox.mturk.com/) to help us design crowdsourcing tasks. 
 
-The folder sessions contains the images and generator of the input data to MTurk projects and the folder postprocessing contains
+The projects design layout HTMLs of the scenarios are in the [MTurk_projects](https://github.com/SunweiWang/CrowdComputing/tree/master/MTurk_projects) folder. The output data from MTurk and the feedback is in the [data](https://github.com/SunweiWang/CrowdComputing/tree/master/data) folder.
+
+The folder [sessions](https://github.com/SunweiWang/CrowdComputing/tree/master/sessions) contains the images and generator of the input data to MTurk projects and the folder [postprocessing](https://github.com/SunweiWang/CrowdComputing/tree/master/postprocessing) contains
 a jupyter notebook which handles the data from the MTurk to obtain useful data. 
 
-## Instruction to the worker
+## Instruction to the participants
 
 1. Please first go to https://workersandbox.mturk.com/
 2. Create an Amazon account with your email
